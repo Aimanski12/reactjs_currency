@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './components/Header/Header'
+import Api from './components/Api/Api'
+import Photospace from './components/Photospace/Photospace'
+import About from './components/About/About'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="">
+        <div className='header'>
+          <Header />
+        </div>
+
+        <Api />
+        <Photospace />
+        <About />
+
+        <div className="footer">
+          <div className="my_website">
+            <p><a href="">aimanadlawan.com</a></p>
+          </div>
+          <div className="social_media">
+            
+          </div>
+        </div>
+
+
+        <div className="photo">
+
+        </div>
+
+
+      </div>
+
+    
+
+
+
   );
 }
 
 export default App;
+
+
