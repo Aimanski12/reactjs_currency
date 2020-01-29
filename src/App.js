@@ -5,7 +5,7 @@ import Header from './components/Header/Header'
 import Api from './components/Api/Api'
 import Photospace from './components/Photospace/Photospace'
 import About from './components/About/About'
-
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -17,21 +17,7 @@ function App() {
         <Api />
         <Photospace />
         <About />
-
-        <div className="footer">
-          <div className="my_website">
-            <p><a href="">aimanadlawan.com</a></p>
-          </div>
-          <div className="social_media">
-            
-          </div>
-        </div>
-
-
-        <div className="photo">
-
-        </div>
-
+        <Footer />
 
       </div>
 
