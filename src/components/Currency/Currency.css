@@ -1,0 +1,110 @@
+.currency {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.currency .container {
+  margin-top: 8%;
+  width: 85%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+  background: linear-gradient(90.65deg, #304549 -0.56%, rgba(34, 40, 41, 0.31) 103.66%);
+  border-radius: 10px;
+}
+
+
+.main_desc {
+  text-align: center;
+}
+
+.select {
+  width: 20em;
+  margin : 0 auto
+}
+
+.currencies {
+  width: 50em;
+  height: 27em;
+  background: gray;
+}
+
+.main_converter {
+  width: 25em;
+  height: 5em;
+  border-radius: 5px;
+  background: #cedce5;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.left, .right {
+  width: 12em;
+  height: 5em;
+  float: left
+}
+
+.country{
+  width: 100%;
+  height: 3.5em;
+  padding-left: 15px;
+}
+
+.country p{
+  font-size: 2.3em;
+  line-height: 55px;
+  margin: 0;
+  float: left;
+}
+
+.country img {
+  width: 60px;
+  float: left;
+  margin: 13px 0 0 10px
+}
+
+.country_cur {
+  width: 100%;
+  height: 1.5em;
+  float: left;
+  padding-left: 15px;
+}
+
+.country_cur p{
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.center {
+  width: 1em;
+  height: 5em;
+  background: gray;
+  float: left;
+}
+.center h5 {
+  font-size: 1.6em;
+  line-height: 3em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+  width: 50px;
+}

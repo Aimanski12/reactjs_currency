@@ -24,6 +24,12 @@ nav.black ul{
   background: linear-gradient(270.65deg, rgba(106,114,118,0.45), rgba(140,147,151,0.45));
 }
 
+nav.black {
+  margin: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+
 nav ul {
   list-style: none;
   background: rgba(0, 0, 0, 0);
