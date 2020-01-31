@@ -20,33 +20,75 @@ const Currency = () => {
           </div>
         </div>
 
+        
+        <div className="main">
 
+        
           <div className='main_converter'>
-
             <div className="left">
-
               <div className="country">
                 <p className="cur_name">USD</p>
                 <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
               </div>
-
               <div className='country_cur'>
                 <p>United States Dollar</p>
               </div>
-              
             </div>
-
             <div className="center">
               <h5>=</h5>
             </div>
             <div className="right">
-              <p className="amount"><i>$ 1 USD</i></p>
+              <p className="amount">$ 1 USD</p>
               <p className="amount_exchange">
                 <i>$ 1 USD = 1 $ USD</i></p>
             </div>
-
-
           </div>
+          {/* individual converter ends */}
+
+          <div className='main_converter'>
+            <div className="left">
+              <div className="country">
+                <p className="cur_name">USD</p>
+                <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
+              </div>
+              <div className='country_cur'>
+                <p>United States Dollar</p>
+              </div>
+            </div>
+            <div className="center">
+              <h5>=</h5>
+            </div>
+            <div className="right">
+              <p className="amount">$ 1 USD</p>
+              <p className="amount_exchange">
+                <i>$ 1 USD = 1 $ USD</i></p>
+            </div>
+          </div>
+          {/* individual converter ends */}
+
+          <div className='main_converter'>
+            <div className="left">
+              <div className="country">
+                <p className="cur_name">USD</p>
+                <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
+              </div>
+              <div className='country_cur'>
+                <p>United States Dollar</p>
+              </div>
+            </div>
+            <div className="center">
+              <h5>=</h5>
+            </div>
+            <div className="right">
+              <p className="amount">$ 1 USD</p>
+              <p className="amount_exchange">
+                <i>$ 1 USD = 1 $ USD</i></p>
+            </div>
+          </div>
+          {/* individual converter ends */}
+
+        </div>
+        {/* main ends  converter wrapper*/}
 
 
       </div>
