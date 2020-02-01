@@ -21,11 +21,8 @@
 
 .main {
   background: red;
+  width: 52em;
 
-  width: 55em;
-  display: flex;
-  /* flex-direction: column; */
-  align-content: space-around;
 }
 
 .main_desc {
@@ -37,21 +34,15 @@
   margin : 0 auto
 }
 
-.currencies {
-  width: 50em;
-  height: 27em;
-  background: gray;
-}
-
 .main_converter {
+  background: teal;
   width: 25em;
   height: 5em;
   border-radius: 5px;
   background: #cedce5;
   font-weight: 600;
-  margin: 4px 2.5em;
+  margin: 4px 0;
   color: black;
-  float: left
 }
 
 .left, .right {
@@ -122,5 +113,18 @@
 
 
 
+@media(max-width: 1080px) {
+  .main {
+    width: 48em;
+  }
+  
+
+}
+
+@media(max-width: 992px) {
+  .main {
+    width: 34em;
+  }
 
 
+}
