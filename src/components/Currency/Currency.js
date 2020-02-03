@@ -25,7 +25,7 @@ const Currency = () => {
 
             <div class="row">
               <div className="col-md-6">
-                  <div className="main_converter">
+                  <div className="main_converter primary">
                     <div className="left">
                       <div className="country">
                         <p className="cur_name">USD</p>
@@ -47,27 +47,6 @@ const Currency = () => {
               </div>
               <div className="col-md-6">
                 <div className="main_converter">
-                    <div className="left">
-                      <div className="country">
-                        <p className="cur_name">USD</p>
-                        <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                      </div>
-                      <div className='country_cur'>
-                        <p>United States Dollar</p>
-                      </div>
-                    </div>
-                    <div className="center">
-                      <h5>=</h5>
-                    </div>
-                    <div className="right">
-                      <p className="amount">$ 1 USD</p>
-                      <p className="amount_exchange">
-                        <i>$ 1 USD = 1 $ USD</i></p>
-                    </div>
-                  </div>
-              </div>
-              {/* <div class="">
-                <div className="main_converter">
                   <div className="left">
                     <div className="country">
                       <p className="cur_name">USD</p>
@@ -81,34 +60,13 @@ const Currency = () => {
                     <h5>=</h5>
                   </div>
                   <div className="right">
-                    <p className="amount">$ 1 USD</p>
+                    <p className="amount">$ 0.3657 USD</p>
                     <p className="amount_exchange">
-                      <i>$ 1 USD = 1 $ USD</i></p>
-                  </div>
-                </div>
-              </div> */}
-              {/* <div class="">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 1 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 1 $ USD</i></p>
+                      <i>$ 1 USD = 5.6547 $ USD</i></p>
                   </div>
                 </div>
               </div>
-              <div class="">
+               <div className="col-md-6">
                 <div className="main_converter">
                   <div className="left">
                     <div className="country">
@@ -123,12 +81,77 @@ const Currency = () => {
                     <h5>=</h5>
                   </div>
                   <div className="right">
-                    <p className="amount">$ 1 USD</p>
+                    <p className="amount">$ 0.3657 USD</p>
                     <p className="amount_exchange">
-                      <i>$ 1 USD = 1 $ USD</i></p>
+                      <i>$ 1 USD = 5.6547 $ USD</i></p>
                   </div>
-                </div> */}
-              {/* </div> */}
+                </div>
+              </div>
+               <div className="col-md-6">
+                <div className="main_converter">
+                  <div className="left">
+                    <div className="country">
+                      <p className="cur_name">USD</p>
+                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
+                    </div>
+                    <div className='country_cur'>
+                      <p>United States Dollar</p>
+                    </div>
+                  </div>
+                  <div className="center">
+                    <h5>=</h5>
+                  </div>
+                  <div className="right">
+                    <p className="amount">$ 0.3657 USD</p>
+                    <p className="amount_exchange">
+                      <i>$ 1 USD = 5.6547 $ USD</i></p>
+                  </div>
+                </div>
+              </div>
+               <div className="col-md-6">
+                <div className="main_converter">
+                  <div className="left">
+                    <div className="country">
+                      <p className="cur_name">USD</p>
+                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
+                    </div>
+                    <div className='country_cur'>
+                      <p>United States Dollar</p>
+                    </div>
+                  </div>
+                  <div className="center">
+                    <h5>=</h5>
+                  </div>
+                  <div className="right">
+                    <p className="amount">$ 0.3657 USD</p>
+                    <p className="amount_exchange">
+                      <i>$ 1 USD = 5.6547 $ USD</i></p>
+                  </div>
+                </div>
+              </div>
+               <div className="col-md-6">
+                <div className="main_converter">
+                  <div className="left">
+                    <div className="country">
+                      <p className="cur_name">USD</p>
+                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
+                    </div>
+                    <div className='country_cur'>
+                      <p>United States Dollar</p>
+                    </div>
+                  </div>
+                  <div className="center">
+                    <h5>=</h5>
+                  </div>
+                  <div className="right">
+                    <p className="amount">$ 0.3657 USD</p>
+                    <p className="amount_exchange">
+                      <i>$ 1 USD = 5.6547 $ USD</i></p>
+                  </div>
+                </div>
+              </div>
+              
+             
             
             </div>
 
