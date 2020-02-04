@@ -60,6 +60,11 @@
   text-align: center;
 }
 
+.api_desc button a{
+  color: white;
+  text-decoration: none;
+}
+
 @media(max-width: 990px) {
   .api_resource {
     height: 400px;

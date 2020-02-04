@@ -1,169 +1,100 @@
 import React from 'react';
 import './Currency.css'
+import {calcBase, calc} from '../../setupFunction'
 
-const Currency = () => {
+const Currency = (props) => {
+
+  const changeCurrency = (curr, name) => {
+    props.changeCurrency(curr, name)
+  }
+  const calculate = (currency, primary) => {
+    if (primary) return 1
+    return calcBase(currency.base.value, currency.primary.value)
+  }
+  const calcCurrency = (base, prime) => {
+    if (base.code === prime.code) return 1
+    return calc(base, prime)
+  }
+    
+
+
+  let currencyList = []
+   let primary;
+   if (props.countries.length > 0) {
+      currencyList = props.countries.map((country, i) => {
+        if (!country.primary) {
+          return ( 
+              <div className="col-md-6" key={i}>
+                <div
+                  className={`main_converter ${country.primary ? 'primary' : ''}`}
+                  onClick={!country.primary ? ()=>changeCurrency(country.currency.base, country.name) : null} 
+                  >
+                  <div className="left">
+                    <div className="country">
+                      <p className="cur_name">
+                        {country.alpha3Code}</p>
+                      <img src={country.flag} alt="flag"/>
+                    </div>
+                    <div className='country_cur'>
+                      <p>{country.cur}</p>
+                    </div>
+                  </div>
+                  <div className="center">
+                    <h5>=</h5>
+                  </div>
+                  <div className="right">
+                    <p className="amount">
+                      {country.currency.base.symbol} {calcCurrency(country.currency.base, country.currency.primary)} {country.currency.base.code}</p>
+                    <p className="amount_exchange">
+                <i>{country.currency.base.symbol} 1 {country.currency.base.code} = {country.currency.primary.symbol}    {calculate(country.currency, country.primary)} {country.currency.primary.code}</i></p>
+                  </div>
+                </div>
+              </div>
+            )}
+          }
+        )
+
+      primary = props.countries.map((count, i) => {
+        if (count.primary) {
+          return ( 
+              <div className="col-md-6" key={i}>
+                <div
+                  className={`main_converter ${count.primary ? 'primary' : ''}`}
+                  onClick={!count.primary ? ()=>changeCurrency(count.currency.base, count.name) : null} 
+                  >
+                  <div className="left">
+                    <div className="country">
+                      <p className="cur_name">
+                        {count.alpha3Code}</p>
+                      <img src={count.flag} alt="flag"/>
+                    </div>
+                    <div className='country_cur'>
+                      <p>{count.cur}</p>
+                    </div>
+                  </div>
+                  <div className="center">
+                    <h5>=</h5>
+                  </div>
+                  <div className="right">
+                    <p className="amount">
+                      {count.currency.base.symbol} {calcCurrency(count.currency.base, count.currency.primary)} {count.currency.base.code}</p>
+                    <p className="amount_exchange">
+                <i>{count.currency.base.symbol} 1 {count.currency.base.code} = {count.currency.primary.symbol}    {calculate(count.currency, count.primary)} {count.currency.primary.code}</i></p>
+                  </div>
+                </div>
+              </div>
+
+            )}
+          }
+        )
+      }
+
 
   return (
-    <div className="currency">
-      <div className="container">
-        
-        <div className="main_desc">
-          <h2>Choose your currency</h2>
-          <p>All rates are referrenced from European Central Bank published exchanged rates.</p>
-          <div class="input-group mb-3 select">
-            <select class="custom-select" id="inputGroupSelect02">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-
-        
-        <div className="main">
-
-            <div class="row">
-              <div className="col-md-6">
-                  <div className="main_converter primary">
-                    <div className="left">
-                      <div className="country">
-                        <p className="cur_name">USD</p>
-                        <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                      </div>
-                      <div className='country_cur'>
-                        <p>United States Dollar</p>
-                      </div>
-                    </div>
-                    <div className="center">
-                      <h5>=</h5>
-                    </div>
-                    <div className="right">
-                      <p className="amount">$ 1 USD</p>
-                      <p className="amount_exchange">
-                        <i>$ 1 USD = 1 $ USD</i></p>
-                    </div>
-                  </div>
-              </div>
-              <div className="col-md-6">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 0.3657 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 5.6547 $ USD</i></p>
-                  </div>
-                </div>
-              </div>
-               <div className="col-md-6">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 0.3657 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 5.6547 $ USD</i></p>
-                  </div>
-                </div>
-              </div>
-               <div className="col-md-6">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 0.3657 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 5.6547 $ USD</i></p>
-                  </div>
-                </div>
-              </div>
-               <div className="col-md-6">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 0.3657 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 5.6547 $ USD</i></p>
-                  </div>
-                </div>
-              </div>
-               <div className="col-md-6">
-                <div className="main_converter">
-                  <div className="left">
-                    <div className="country">
-                      <p className="cur_name">USD</p>
-                      <img src='https://restcountries.eu/data/usa.svg' alt="flag"/>
-                    </div>
-                    <div className='country_cur'>
-                      <p>United States Dollar</p>
-                    </div>
-                  </div>
-                  <div className="center">
-                    <h5>=</h5>
-                  </div>
-                  <div className="right">
-                    <p className="amount">$ 0.3657 USD</p>
-                    <p className="amount_exchange">
-                      <i>$ 1 USD = 5.6547 $ USD</i></p>
-                  </div>
-                </div>
-              </div>
-              
-             
-            
-            </div>
-
-              
-
-        
-      
-
-        </div>
-        {/* main ends  converter wrapper*/}
-
-
+    <div className="main">
+      <div class="row">
+        {primary}
+        {currencyList}
       </div>
     </div>
   )

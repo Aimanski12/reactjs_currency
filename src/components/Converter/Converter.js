@@ -11,13 +11,12 @@ const Converter = () => {
           <h1>Convert any currency</h1>
           <p>Select any currency that you want to convert. All rates are based from the European Central Bank exchange rates.</p>
         </div>
-
       
         <div className="calc">
 
           <div className="calc_container">
-            <div class="input-group mb-3 select">
-              <select class="custom-select" id="inputGroupSelect02">
+            <div className="input-group mb-3 select">
+              <select className="custom-select" id="inputGroupSelect02">
                 <option selected>Select country. . .</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -47,8 +46,8 @@ const Converter = () => {
 
 
            <div className="calc_container">
-            <div class="input-group mb-3 select">
-              <select class="custom-select" id="inputGroupSelect02">
+            <div className="input-group mb-3 select">
+              <select className="custom-select" id="inputGroupSelect02">
                 <option selected>Select country. . .</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>

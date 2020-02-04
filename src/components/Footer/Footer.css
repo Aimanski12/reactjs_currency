@@ -19,13 +19,19 @@
   line-height: 60px;
 }
 
-.my_website p a {
+.my_website p {
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
-  line-height: 28px;
+  line-height: 55px;
   color: #08293F;
 }
+
+.my_website p:hover {
+  text-decoration: none;
+  color: #0e4f7c;
+}
+
 
 .social_media {
   height: 90px;
@@ -42,10 +48,14 @@
   width: 50px;
 }
 
+.social_media img:hover {
+  cursor: pointer;
+}
+
 
 @media(max-width: 768px) {
   
-  .my_website p a {
+  .my_website p {
     font-size: 28px;
   }
   .social_media img {
@@ -57,7 +67,7 @@
 
 @media(max-width: 650px) {
 
-  .my_website p a {
+  .my_website p {
     font-size: 24px;
   }
 
@@ -70,7 +80,7 @@
 
 @media(max-width: 530px) {
 
-  .my_website p a {
+  .my_website p {
     font-size: 23px;
   }
 

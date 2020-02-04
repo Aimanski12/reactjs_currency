@@ -8,8 +8,17 @@
   letter-spacing: 1px;
 }
 
+.logo span:hover{ 
+  text-decoration: none;
+}
+
 .logo i {
-  margin-right: 10px
+  margin-right: 10px;
+  color: #EDEBEB;
+}
+
+.logo span {
+  color: #EDEBEB;
 }
 
 

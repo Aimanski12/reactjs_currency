@@ -1,3 +1,5 @@
+
+
 .currency {
   width: 100%;
   height: inherit;
@@ -34,14 +36,17 @@
 }
 
 .main_converter {
-  background: teal;
   width: 25em;
   height: 5em;
   border-radius: 5px;
-  background: #cedce5;
+  background: #a8bcc8;
   font-weight: 600;
   margin: 4px 0;
   color: black;
+}
+
+.primary {
+  background: #cedce5;
 }
 
 .left, .right {
@@ -99,7 +104,7 @@
 
 .right .amount {
   padding: 0;
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin: 0;
 }
 
@@ -130,20 +135,19 @@
   }
 
   .right .amount{
-    font-size: 1.6em;
+    font-size: 1.45em;
   }
 }
 
 @media(max-width: 992px) {
   .main {
     width: 34em;
-    height: 3.7em;
+    height: 16em;
   }
   .main_converter {
     width: 16em;
     height: 3.7em;
-    margin: 0px 0;
-
+    margin: 0 0 5px 0 ;
   }
 
   .left,
