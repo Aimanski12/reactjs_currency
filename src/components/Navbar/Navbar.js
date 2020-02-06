@@ -7,7 +7,6 @@ import {
 
 const Navbar = () => {
 
-
   return(
     <nav>
       <div className="menu-icon">
@@ -21,15 +20,9 @@ const Navbar = () => {
       </div>
       <div className="menu">
         <ul>
-          {/* <Link to='/'> */}
-            <li><a href='/'>Home</a></li>
-          {/* </Link> */}
-          {/* <Link to='/currencies'> */}
-            <li><a href='/currencies'>Currencies</a></li>
-          {/* </Link> */}
-          {/* <Link to='/convert'> */}
-            <li><a href='/convert'>Convert</a></li>
-          {/* </Link> */}
+          <li><a href='/'>Home</a></li>
+          <li><a href='/currencies'>Currencies</a></li>
+          <li><a href='/convert'>Convert</a></li>
         </ul>
       </div>
     </nav>

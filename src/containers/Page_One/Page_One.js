@@ -9,7 +9,6 @@ import About from '../../components/About/About'
 import Footer from '../../components/Footer/Footer'
 
 const PageOne = () => {
-
   return (
     <Fragment>
       <div className="header">

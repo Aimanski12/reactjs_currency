@@ -8,13 +8,15 @@ import Photo from '../../components/Photospace/Photospace'
 import About from '../../components/About/About'
 import Footer from '../../components/Footer/Footer'
 
-const PageTwo = () => {
+const PageTwo = (props) => {
 
   return (
     <Fragment>
        <div className="header">
         <Navbar />
-        <Converter />
+        <Converter 
+          countries={props.countries}
+          currency={props.currency} />
       </div>
       <Api />
       <Photo />

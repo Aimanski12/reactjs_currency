@@ -72,7 +72,6 @@ const App = () => {
     initCountry(b)
   }
 
-
   return (
     <Router>
       <Switch>
@@ -87,7 +86,9 @@ const App = () => {
             changeCurrency={(currency, name)=>changeCurrency(currency, name)} />
         </Route>
          <Route exact path='/convert'>
-          <PageThree />
+          <PageThree 
+            countries={all_countries}
+            currency={currency} />
         </Route>
       </Switch>
     </Router>

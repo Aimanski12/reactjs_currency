@@ -7,20 +7,16 @@
   font-size: 1.25em;
   letter-spacing: 1px;
 }
-
 .logo span:hover{ 
   text-decoration: none;
 }
-
 .logo i {
   margin-right: 10px;
   color: #EDEBEB;
 }
-
 .logo span {
   color: #EDEBEB;
 }
-
 
 nav {
   position: fixed;
@@ -49,7 +45,6 @@ nav ul {
   transition: 1s;
 }
 
-
 nav ul li {
   display: inline-block;
   padding: 20px 20px;
@@ -76,35 +71,27 @@ nav ul li a:hover {
   cursor: pointer;
   display: none;
 }
-
 /* nav bar ends */
-
-
 
 /* media for 930px */
 @media(max-width: 930px) {
   .logo {
     font-size: 1.1em;
   }
-
   nav ul {
     margin-right: 0px;
   }
-
   nav.black ul {
     background: linear-gradient(270.65deg, rgba(106, 114, 118, 0.45), rgba(140, 147, 151, 0.45));
   }
-
   nav ul li {
     margin-right: 0px;
   }
-
   nav ul li a {
     margin-right: 0px;
     font-size: 17px;
   }
 }
-
 
 /* media for 768px */
 @media(max-width: 768px) {
@@ -124,7 +111,7 @@ nav ul li a:hover {
   }
 
   nav ul {
-    max-height: 0px;
+    /* max-height: 0px; */
     margin: 0;
   }
 
@@ -142,8 +129,10 @@ nav ul li a:hover {
   .menu-icon {
     display: block;
   }
+  .menu-icon:hover {
+    display: block;
+  }
 }
-
 
 /* media for 440px */
 @media(max-width: 440px) {

@@ -11,8 +11,6 @@ import Footer from '../../components/Footer/Footer'
 
 const PageTwo = (props) => {
 
- 
-
   return (
     <Fragment>
        <div className="header">
@@ -20,7 +18,10 @@ const PageTwo = (props) => {
 
         <div className="currency">
           <div className="container">
-            <Select />
+            <Select 
+              options={props.options}
+              countries={props.countries}
+              change={(val)=>props.change(val)} />
             <Currency 
               changeCurrency={(currency, name)=>props.changeCurrency(currency, name)}
               countries={props.countries} />

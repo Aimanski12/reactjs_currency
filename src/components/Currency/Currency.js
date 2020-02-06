@@ -16,8 +16,6 @@ const Currency = (props) => {
     return calc(base, prime)
   }
     
-
-
   let currencyList = []
    let primary;
    if (props.countries.length > 0) {
@@ -89,10 +87,9 @@ const Currency = (props) => {
         )
       }
 
-
   return (
     <div className="main">
-      <div class="row">
+      <div className="row">
         {primary}
         {currencyList}
       </div>

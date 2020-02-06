@@ -3,7 +3,6 @@ import './Middle.css'
 import {Link} from 'react-router-dom'
 
 const Middle = () => {
-
   return (
     <div className="mainText">
       <div className="container">

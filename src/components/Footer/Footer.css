@@ -1,5 +1,3 @@
-
-
 .footer {
   background: url('/img/footer.png') no-repeat center center scroll;
   width: 100%;
@@ -52,9 +50,7 @@
   cursor: pointer;
 }
 
-
 @media(max-width: 768px) {
-  
   .my_website p {
     font-size: 28px;
   }
@@ -62,48 +58,38 @@
     width: 45px;
     margin-left: 24px;
   }
-
 }
 
 @media(max-width: 650px) {
-
   .my_website p {
     font-size: 24px;
   }
-
   .social_media img {
     width: 42px;
     margin-left: 20px;
   }
-
 }
 
 @media(max-width: 530px) {
-
   .my_website p {
     font-size: 23px;
   }
-
   .social_media img {
     width: 40px;
     margin-left: 16px;
   }
-
 }
 
 @media(max-width: 480px) {
-
   .footer {
     height: 110px;
     background: url('/img/footersmall.png') no-repeat center center scroll;
   }
-  
   .my_website {
     width: 100%;
     height: 45px;
     padding: 7px;
   }
-  
   .my_website p {
     height: 40px;
     line-height: 40px;
@@ -111,7 +97,5 @@
   .social_media {
     width: 100%;
     height: 45px;
-    /* background: teal; */
   }
-
 }
